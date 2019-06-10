@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saas</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+    </head>
+    <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Welcome To SAAS</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                   <!--  <% if(!currentUser){ %> -->
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Sign Up</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Login</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/login/otp" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="gmail_id" placeholder="gmail_id">
+                </div>
+                <!-- <div class="form-group">
+                    <input class="form-control" type="text" name="password" placeholder="password">
+                </div> -->
+                
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Reset Password</button>
+                </div>
+            </form>
+            <!-- <a href="/edit">Forgot Password</a> -->
+        </div>
+    </div>
+</div>
+
+       </body>
+</html>
